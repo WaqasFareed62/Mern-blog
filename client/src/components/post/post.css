@@ -1,0 +1,34 @@
+img{
+    max-width: 100%;
+    vertical-align: baseline;
+    
+}
+
+div.post{ 
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 15px;
+    vertical-align: baseline;
+  }
+.title{
+margin: 0;
+font-size: 1.5rem;
+}
+.date{
+    margin: 0;
+   
+}
+.date span{
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+}
+.image{
+    vertical-align: baseline;
+    object-fit: fill;
+}
+.links{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}

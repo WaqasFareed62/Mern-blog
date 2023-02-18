@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  header a{
+    
+    text-decoration: none;
+    color: inherit;
+  }
+  header a.logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  header nav{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+  }
+  .link{
+    font-weight: bold;
+  }
