@@ -20,9 +20,7 @@ app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
 mongoose.set("strictQuery", false);
-mongoose.connect(
-  "mongodb+srv://waqas:waqasf123@cluster0.pjk87vz.mongodb.net/?retryWrites=true&w=majority"
-);
+mongoose.connect("YOur Mongo db URL here");
 app.post("/register", async (req, res) => {
   const { username, password } = req.body;
   try {
@@ -138,5 +136,3 @@ app.put("/post", upload.single("file"), async (req, res) => {
 app.listen(4000, () => {
   console.log("Server Started On port 4000");
 });
-
-//mongodb+srv://waqas:waqasf123@cluster0.pjk87vz.mongodb.net/?retryWrites=true&w=majority
